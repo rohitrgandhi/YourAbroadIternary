@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    text-align: center;
+}
+.heading{
+    background-color: #6C63FF;
+    padding: 10px;
+    font-size: 3rem;
+    color:white;
+    border-radius: 1rem;
+}
+
+header{
+    text-align: center;
+}
+.accordian {
+    max-width: 1200px;
+  }
+.accordian .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordian .contentBx .label{
+    text-align: center;
+    position: relative;
+    padding:5px;
+    background:#6C63FF;
+    color:white;
+    cursor:pointer;
+    border-radius: 1rem;
+    align-items: center;
+}
+.accordian .contentBx .label::before{
+    content:'+';
+    position:absolute;
+    top:50%;
+    right:20px;
+    transform:translateY(-50%);
+    font-size:1.5em;
+}
+.accordian .contentBx.active .label::before{
+    content:'-';
+}
+.accordian .contentBx .content{
+    position:relative;
+    background:white;
+    height:0px;
+    overflow:hidden;
+    transition:0.5s;
+    overflow-y:auto;
+}
+.accordian .contentBx.active .content{
+height:150px;
+padding:10px;
+}
+.header-img{
+    width:30%;
+    height:30%;
+}
+.image{
+    width:15%;
+    height:15%;
+}
+.list-non-bullet{
+    list-style: none;
+}
+.list-item-inline{
+        display: inline;
+        padding: 0rem 2.5rem;
+}
+.footer{
+    color:white;
+    text-align:center;
+    font-weight: 600px;
+    background-color: #6C63FF;
+    padding:1px;
+    border-radius: 1rem;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+}
